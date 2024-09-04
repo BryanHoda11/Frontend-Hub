@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #ddd6fe;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-weight: 500;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  width: 7px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8a2be2; 
+  border-radius: 10px; 
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent; 
+  border-radius: 10px; 
+  width: 7px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7a1ec2;
+}
+
+.active-link {
+  color: violet;
+  font-weight: bold;
+  border-bottom: 2px solid violet;
+}
