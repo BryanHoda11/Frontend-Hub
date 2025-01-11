@@ -1,6 +1,6 @@
 "use client"
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useSession, signIn, signOut } from "next-auth/react"
 import { FaGithub } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
@@ -10,10 +10,13 @@ import { useRouter } from 'next/navigation';
 
 const Login = () => {
   const { data: session } = useSession()
-  if (session) {
-    const router = useRouter()
-    router.push('/Tutorials')
-  }
+  const router = useRouter()
+
+   useEffect(() => {
+    if (session) {
+      router.push('/Tutorials');
+    }
+  }, [session, router]);
 
   return (
     <>
