@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
 import Link from "next/link"
 
-const csspage = () => {
+const Csspage = () => {
   const [left, setleft] = useState(false);
 
   const handleLeft = () => {
@@ -282,4 +282,4 @@ const csspage = () => {
   )
 }
 
-export default csspage
+export default Csspage
