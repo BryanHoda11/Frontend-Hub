@@ -229,10 +229,10 @@ const Nextjspage = () => {
 
               <div className='bg-violet-400 w-full md:w-[85%] lg:w-[65%] mx-auto rounded-lg my-4 flex flex-col justify-center px-5 py-4 gap-2 text-black font-bold'>
                 <h3 className='text-md font-bold text-black'>Terminal :</h3>
-                <span className='flex sm:flex-row flex-col sm:gap-3 sm:items-center pb-3 sm:pb-0'>npm run dev <span className='opacity-50'>// to start Next.js in development mode.</span> </span>
-                <span className='flex sm:flex-row flex-col sm:gap-3 sm:items-center pb-3 sm:pb-0'>npm run start <span className='opacity-50'>// to start a Next.js production server.</span> </span>
-                <span className='flex sm:flex-row flex-col sm:gap-3 sm:items-center pb-3 sm:pb-0'>npm run build <span className='opacity-50'>// to build the application for production usage.</span> </span>
-                <span className='flex sm:flex-row flex-col sm:gap-3 sm:items-center pb-3 sm:pb-0'>npm run lint <span className='opacity-50'>// to set up Next.js' built-in ESLint configuration.</span> </span>
+                <span className='flex sm:flex-row flex-col sm:gap-3 sm:items-center pb-3 sm:pb-0'>npm run dev <span className='opacity-50'>{"// to start Next.js in development mode."}</span> </span>
+                <span className='flex sm:flex-row flex-col sm:gap-3 sm:items-center pb-3 sm:pb-0'>npm run start <span className='opacity-50'>{"// to start a Next.js production server."}</span> </span>
+                <span className='flex sm:flex-row flex-col sm:gap-3 sm:items-center pb-3 sm:pb-0'>npm run build <span className='opacity-50'>{"// to build the application for production usage."}</span> </span>
+                <span className='flex sm:flex-row flex-col sm:gap-3 sm:items-center pb-3 sm:pb-0'>npm run lint <span className='opacity-50'>{"// to set up Next.js' built-in ESLint configuration."}</span> </span>
               </div>
 
               <p className='text-md my-2 text-violet-700 font-bold'>Finally your Next app will be created. Go into the 'App' directory and go to page.js file.</p>
